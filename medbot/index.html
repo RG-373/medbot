@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💬 MedBot AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header>
+      <h1>🤖 MedBot</h1>
+      <p>Your friendly health companion</p>
+    </header>
+
+    <main id="chat-box" class="chat-box">
+      <div class="message bot">
+        <div class="avatar bot">🤖</div>
+        <div class="bubble">
+          Hi there! I’m <b>MedBot</b> 🩺<br>
+          You can <b>type</b> or <b>speak</b> your symptoms — I’ll try to help! 🎙
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="input-row">
+        <input id="user-input" type="text" placeholder="Type your symptoms..." autocomplete="off" />
+        <button id="mic-btn" title="Speak"><span>🎤</span></button>
+        <button id="send-btn">Send</button>
+      </div>
+      <label class="speak-toggle">
+        <input type="checkbox" id="speak-toggle" checked />
+        🔊 Speak replies
+      </label>
+    </footer>
+  </div>
+</body>
+</html>
